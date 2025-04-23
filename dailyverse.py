@@ -30,7 +30,7 @@ tavily_api_key = os.getenv("TAVILY_API_KEY")  # Added Tavily API key
 if not firebase_admin._apps:
     try:
         # Try to use streamlit secrets (for deployment)
-        firebase_creds = st.secrets["firebase"]
+        firebase_creds = dict(st.secrets["firebase"])
         cred = credentials.Certificate(firebase_creds)
     except:
         # Fall back to file for local development
