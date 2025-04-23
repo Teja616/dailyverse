@@ -2,13 +2,15 @@
 
 ## Your Personal AI Content Companion
 
+### Live Site Link : https://dailyverse-hackhazards.streamlit.app/
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.22%2B-FF4B4B)
 
 In an age of overwhelming digital clutter, DailyVerse transforms how you consume content by delivering personalized, AI-generated creations straight to your inbox daily.
 
-![DailyVerse Header](https://via.placeholder.com/800x400?text=DailyVerse)
+
 
 ## 🌟 Features
 
