@@ -28,7 +28,13 @@ tavily_api_key = os.getenv("TAVILY_API_KEY")  # Added Tavily API key
 
 # Initialize Firebase Admin SDK
 if not firebase_admin._apps:
-    cred = credentials.Certificate("firebase_config.json")  # Replace with your Firebase service account file
+    try:
+        # Try to use streamlit secrets (for deployment)
+        firebase_creds = st.secrets["firebase"]
+        cred = credentials.Certificate(firebase_creds)
+    except:
+        # Fall back to file for local development
+        cred = credentials.Certificate("firebase_config.json")
     firebase_admin.initialize_app(cred)
 
 db = firestore.client()
