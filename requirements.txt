@@ -1,6 +1,5 @@
 streamlit==1.44.1
 pillow==11.1.0
-smtplib
 firebase-admin==6.7.0
 schedule
 langchain==0.3.23
