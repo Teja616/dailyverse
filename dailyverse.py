@@ -23,8 +23,10 @@ from langchain_core.messages import HumanMessage, SystemMessage
 # Load environment variables (if using .env)
 load_dotenv()
 
-groq_api_key = os.getenv("GROQ_API_KEY")
-tavily_api_key = os.getenv("TAVILY_API_KEY")  # Added Tavily API key
+
+groq_api_key = st.secrets("GROQ_API_KEY")
+
+tavily_api_key = st.secrets("TAVILY_API_KEY")   # Added Tavily API key
 
 # Initialize Firebase Admin SDK
 if not firebase_admin._apps:
@@ -295,9 +297,9 @@ def send_email(recipient, content_dict, model_used):
     part = MIMEText(html_content, 'html')
     msg.attach(part)
 
-    with smtplib.SMTP(os.getenv("EMAIL_SERVER"), int(os.getenv("EMAIL_PORT"))) as server:
+    with smtplib.SMTP(st.secrets("EMAIL_SERVER"), int(st.secrets("EMAIL_PORT"))) as server:
         server.starttls()
-        server.login(os.getenv("EMAIL_HOST"), os.getenv("EMAIL_PASSWORD"))
+        server.login(st.secrets("EMAIL_HOST"), st.secrets("EMAIL_PASSWORD"))
         server.sendmail(msg['From'], recipient, msg.as_string())
 
 # Helper function to format news digest for better display
