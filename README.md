@@ -71,8 +71,8 @@ Highlight the most important features of your project:
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** [https://youtu.be/pe6PzNMajEg?si=jnN8lfFcBuUg5O8V]
-- **Deployment Link:** [https://dailyverse-hackhazards.streamlit.app/]
+- **Demo Video Link:** https://youtu.be/pe6PzNMajEg?si=jnN8lfFcBuUg5O8V
+- **Deployment Link:** https://dailyverse-hackhazards.streamlit.app/
 
 ---
 
@@ -135,7 +135,7 @@ streamlit run dailyverse.py
 
 Building **DailyVerse** was more than just coding—it was a sprint of creativity, curiosity, and caffeine! From making LLMs generate quirky stories to sending them right to your inbox with Firebase magic, this journey was full of "aha!" moments and late-night bug hunts.
 
-We explored real-time news summarization, model customization, and multilingual content delivery—all packed into a fun, user-first platform. Big cheers to the open-source community, hackathon organizers, and everyone who helped us debug that *one* stubborn issue (you know who you are).
+We explored real-time news summarization, model customization, and multilingual content delivery—all packed into a fun, user-first platform. Big cheers to the, hackathon organizers, and everyone who helped us debug that *one* stubborn issue (you know who you are).
 
 Here’s to making AI not just smart, but soulful too. 🎉
 
