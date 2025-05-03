@@ -23,6 +23,7 @@ Make content accessible and engaging through multilingual support and optional s
 
 Enable Seamless Content Delivery & Engagement:
 Automate content scheduling and email delivery with a user-friendly interface, making daily engagement fun, effortless, and consistent.
+
 ---
 
 ## 🧠 Team & Approach
